@@ -1,0 +1,105 @@
+question,true_label,predicted,confidence,correct
+what's behind all this stuff i've been dealing with,causes,causes,0.9995436072349548,True
+did my lifestyle bring this on or is it just bad luck,causes,causes,0.9993926286697388,True
+could this be linked to the new job stress,causes,causes,0.9967213273048401,True
+what made this start in the first place,causes,causes,0.99806147813797,True
+is smoking the reason behind my problem,causes,causes,0.9995208978652954,True
+what's involved in getting properly checked out for this,exams and tests,exams and tests,0.996379554271698,True
+do they take blood or just look at me,exams and tests,exams and tests,0.37867915630340576,True
+how soon will i know what's going on after the appointment,exams and tests,exams and tests,0.9595184326171875,True
+is an x ray enough or do they need more than that,exams and tests,exams and tests,0.9948257803916931,True
+what happens during the actual checkup for this,exams and tests,exams and tests,0.9559273719787598,True
+i don't even know what to call what's happening to me,information,information,0.9980073571205139,True
+my nurse mentioned a name but i forgot what it means,information,information,0.9990611672401428,True
+is this a fancy term for something more common,information,information,0.9995748400688171,True
+break this down for me like i'm five,information,information,0.7211612462997437,True
+is there a simpler name for what i've got,information,information,0.9997509121894836,True
+"my nan had something similar, could that be relevant",inheritance,symptoms,0.6628366708755493,False
+does it skip generations or always show up,inheritance,inheritance,0.978293240070343,True
+would my future children be at risk because of this,inheritance,inheritance,0.9935259819030762,True
+is this why it seems to run on my dad's side,inheritance,inheritance,0.9913640022277832,True
+could this be in my dna somehow,inheritance,inheritance,0.9909353852272034,True
+anything i should be doing differently day to day now,precautions,precautions,0.9992935657501221,True
+is flying on a plane a bad idea right now,precautions,precautions,0.580311119556427,True
+should i be cutting certain foods out just to be safe,precautions,precautions,0.999427318572998,True
+is it risky to keep playing football with this,precautions,precautions,0.9988293051719666,True
+what precautions do people usually take with this,precautions,precautions,0.9994885921478271,True
+"the leaflet lists a load of scary stuff, is that normal",side effects,side effects,0.999370276927948,True
+"i've put on weight since starting these, is that from the drug",side effects,side effects,0.9995664954185486,True
+my mouth's gone dry ever since the new prescription,side effects,side effects,0.9994266033172607,True
+could the headaches be from the medication and not the illness,side effects,side effects,0.9970712661743164,True
+is hair loss something this treatment is known for,side effects,side effects,0.9973224997520447,True
+what would tip me off that something's actually wrong,symptoms,symptoms,0.946085512638092,True
+"i've got this odd pressure behind my eyes, is that part of it",symptoms,causes,0.9869695901870728,False
+do people with this usually struggle to catch their breath,symptoms,symptoms,0.9976891279220581,True
+"swelling in my ankles, is that something to note",symptoms,symptoms,0.9980452060699463,True
+is constant thirst one of the things people notice first,symptoms,symptoms,0.9991220831871033,True
+what's the usual first step doctors try for this,treatment and outlook,treatment and outlook,0.9821065664291382,True
+do most people need an operation or just pills,treatment and outlook,treatment and outlook,0.9992515444755554,True
+if the first treatment doesn't work what happens next,treatment and outlook,treatment and outlook,0.9976219534873962,True
+is physio part of how this normally gets managed,treatment and outlook,treatment and outlook,0.9990756511688232,True
+how long does a typical course of treatment last,treatment and outlook,treatment and outlook,0.999319314956665,True
+five years from now will this still be a problem,treatment and outlook,treatment and outlook,0.9983037710189819,True
+"people with this, how do they usually end up",treatment and outlook,treatment and outlook,0.9934083223342896,True
+is full recovery realistic or wishful thinking,treatment and outlook,treatment and outlook,0.9992905855178833,True
+does quality of life usually stay decent with this,treatment and outlook,treatment and outlook,0.9987338185310364,True
+what's the typical timeline before things improve,treatment and outlook,treatment and outlook,0.9994328618049622,True
+is this the kind of thing you wait out or get seen for,when to contact a medical professional,when to contact a medical professional,0.9933483004570007,True
+"my mum says go to the gp, am i overreacting if i do",when to contact a medical professional,when to contact a medical professional,0.9937357306480408,True
+would the out of hours line take this seriously,when to contact a medical professional,when to contact a medical professional,0.9955301880836487,True
+is this a same day appointment kind of issue,when to contact a medical professional,when to contact a medical professional,0.9414222836494446,True
+should i just sleep on it or get looked at tonight,when to contact a medical professional,when to contact a medical professional,0.9974660873413086,True
+"my doctor mentioned it could be hormonal, does that sound right",causes,side effects,0.7026234865188599,False
+is this just bad genes or did i bring it on myself,causes,causes,0.9988067150115967,True
+could not sleeping properly be the root of all this,causes,causes,0.9994588494300842,True
+i've changed nothing about my routine so why is this happening now,causes,causes,0.9917318820953369,True
+is it the weather making this flare up or something else,causes,causes,0.9994316697120667,True
+could years of bad posture have led to this,causes,causes,0.999461829662323,True
+will they need to send anything off to a lab,exams and tests,exams and tests,0.9886050224304199,True
+what's the process for getting referred to a specialist for this,exams and tests,exams and tests,0.9974808096885681,True
+do they just feel around or is there actual equipment involved,exams and tests,exams and tests,0.8076754212379456,True
+is it painful when they do the test for this,exams and tests,exams and tests,0.9987444877624512,True
+how many appointments does it usually take to get a diagnosis,exams and tests,exams and tests,0.9983804225921631,True
+would i need to fast before any of the tests,exams and tests,exams and tests,0.9978591799736023,True
+the letter from the hospital used a term i've never seen written down,information,information,0.9963202476501465,True
+is this basically a fancy word for something everyone gets,information,information,0.9994300007820129,True
+could you put what i have into normal words,information,information,0.7185503244400024,True
+i nodded along at the appointment but didn't actually understand,information,when to contact a medical professional,0.9409259557723999,False
+what's the layman's version of what's wrong with me,information,causes,0.7388480305671692,False
+is there an easier word for this condition,information,information,0.9981776475906372,True
+"my auntie on my mum's side had it too, is that relevant",inheritance,inheritance,0.9898890852928162,True
+are boys or girls more likely to inherit this,inheritance,inheritance,0.9935804605484009,True
+if both my parents are fine could it still be genetic,inheritance,inheritance,0.9948174357414246,True
+does it definitely get passed on or is it just a higher chance,inheritance,inheritance,0.9884859323501587,True
+would a genetic test actually confirm if it's hereditary,inheritance,inheritance,0.9937509894371033,True
+"my twin doesn't have it, does that rule out genetics",inheritance,inheritance,0.99513840675354,True
+is it fine to carry on driving with this,precautions,precautions,0.9994244575500488,True
+should i be telling my employer about this for safety reasons,precautions,precautions,0.999494194984436,True
+is swimming something i should avoid for now,precautions,precautions,0.9993842840194702,True
+do i need to be careful in the sun because of this,precautions,precautions,0.9974831938743591,True
+is it sensible to keep drinking coffee with this going on,precautions,precautions,0.9979135394096375,True
+should i avoid crowded places while dealing with this,precautions,precautions,0.9993589520454407,True
+ever since the new prescription my hands have been shaking a bit,side effects,side effects,0.999285876750946,True
+is constipation something people get from this kind of medicine,side effects,side effects,0.9336366653442383,True
+"my skin's gone really dry, could that be from the cream they gave me",side effects,side effects,0.9921754002571106,True
+the pharmacist warned me about something but i forgot what,side effects,causes,0.41317254304885864,False
+is it normal to feel spaced out on this dosage,side effects,side effects,0.9980791807174683,True
+could the new tablets be why i've lost my appetite,side effects,side effects,0.8702880144119263,True
+"my vision's been blurry on and off, is that worth mentioning",symptoms,symptoms,0.9062612652778625,True
+"i get a weird taste in my mouth sometimes, is that normal",symptoms,symptoms,0.9971746206283569,True
+my hands go numb sometimes for no reason,symptoms,symptoms,0.9916419982910156,True
+i've noticed i bruise way easier than i used to,symptoms,treatment and outlook,0.426268070936203,False
+there's a clicking sound in my joint when i move it,symptoms,symptoms,0.9988473653793335,True
+i feel sick every morning but it goes away by lunch,symptoms,symptoms,0.9290258288383484,True
+is there a cure or is it just about managing it,treatment and outlook,treatment and outlook,0.9990589022636414,True
+do they ever just monitor it without doing anything,treatment and outlook,treatment and outlook,0.9986377358436584,True
+would i need to come back for follow up sessions,treatment and outlook,treatment and outlook,0.9873107671737671,True
+how likely is it to come back even after treatment,treatment and outlook,treatment and outlook,0.9987245202064514,True
+is this something that fixes itself eventually without help,treatment and outlook,treatment and outlook,0.9990254640579224,True
+will i need a different approach if this one doesn't work,treatment and outlook,treatment and outlook,0.9981270432472229,True
+is a fever alone enough reason to get checked or should i wait for more symptoms,when to contact a medical professional,when to contact a medical professional,0.9940769672393799,True
+would a pharmacist be enough or do i need an actual doctor,when to contact a medical professional,treatment and outlook,0.8280361294746399,False
+if it's not improving by tomorrow should i finally get it looked at,when to contact a medical professional,when to contact a medical professional,0.9961866736412048,True
+is calling an ambulance overkill for something like this,when to contact a medical professional,when to contact a medical professional,0.9297305345535278,True
+should i go straight to hospital or try the gp first,when to contact a medical professional,when to contact a medical professional,0.9969393014907837,True
+is this worth disturbing the doctor on a weekend for,when to contact a medical professional,when to contact a medical professional,0.9944214224815369,True
