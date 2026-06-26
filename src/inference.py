@@ -18,7 +18,7 @@ from sklearn.preprocessing import LabelEncoder
 from transformers import AutoModelForSequenceClassification, AutoTokenizer
 from lime.lime_text import LimeTextExplainer
 
-MODEL_DIR = Path(__file__).resolve().parent.parent / "models" / "distilbert_medical_intent_v12"
+MODEL_DIR = "umarkhan0206/medical-intent-classifier"
 MAX_LENGTH = 64
 CONFIDENCE_THRESHOLD = 0.85
 
@@ -29,7 +29,9 @@ class MedicalIntentClassifier:
         self.tokenizer = AutoTokenizer.from_pretrained(model_dir)
         self.model.eval()
 
-        with open(Path(model_dir) / "label_map.json", "r") as f:
+        from huggingface_hub import hf_hub_download
+        label_map_path = hf_hub_download(repo_id=model_dir, filename="label_map.json")
+        with open(label_map_path, "r") as f:
             label_map = json.load(f)
         self.label_encoder = LabelEncoder()
         self.label_encoder.classes_ = np.array(list(label_map.keys()))
