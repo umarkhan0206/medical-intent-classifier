@@ -26,11 +26,11 @@ CSS = """
     --ink:        #0B2540;
     --parchment:  #F7F3EC;
     --parchment2: #EFE9DC;
-    --sage:       #5C8A6E;
-    --sage-bg:    #E7EFE8;
-    --ochre:      #C97B2E;
-    --ochre-bg:   #FBEEDF;
-    --slate:      #8B95A1;
+    --sage:       #2E7D52;
+    --sage-bg:    #DCEFE3;
+    --ochre:      #D9650B;
+    --ochre-bg:   #FCE4CC;
+    --slate:      #6B7585;
     --rule:       #D8D0C0;
 }
 
@@ -65,22 +65,18 @@ header[data-testid="stHeader"] { background: transparent; }
     margin-bottom: 1rem;
 }
 
-.cn-chips {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-bottom: 1.4rem;
-    padding-bottom: 1.2rem;
-    border-bottom: 1px solid var(--rule);
-}
-.cn-chip {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 0.7rem;
+.cn-chips-plain {
+    font-size: 0.85rem;
     color: var(--slate);
-    background: var(--parchment2);
-    border: 1px solid var(--rule);
-    border-radius: 14px;
-    padding: 0.25rem 0.7rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--rule);
+    margin-bottom: 1.3rem;
+    line-height: 1.6;
+}
+.cn-chips-wrap {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--rule);
+    margin-bottom: 1.3rem;
 }
 
 .cn-eyebrow {
@@ -118,6 +114,7 @@ div[data-testid="stButton"] button:hover {
     border-color: var(--sage);
     color: var(--sage);
 }
+
 
 .cn-card {
     background: white;
@@ -339,10 +336,25 @@ CATEGORY_DESCRIPTIONS = {
     "when to contact a medical professional": "Whether and how urgently to seek care",
 }
 
+CATEGORY_EXAMPLE_MAP = {
+    "causes": "what's actually triggering this",
+    "exams and tests": "what kind of test will they do to check this",
+    "information": "can someone explain what this actually means",
+    "inheritance": "does this run in families",
+    "precautions": "what should i avoid doing because of this",
+    "side effects": "is feeling sick normal after starting this medicine",
+    "symptoms": "what does this actually feel like",
+    "treatment and outlook": "how do they actually treat this",
+    "when to contact a medical professional": "is this serious enough to go to a and e",
+}
+
 
 def render_category_chips():
-    chips = "".join(f'<span class="cn-chip">{c.title()}</span>' for c in CATEGORY_DESCRIPTIONS)
-    st.markdown(f'<div class="cn-chips">{chips}</div>', unsafe_allow_html=True)
+    cats = " · ".join(c.title() for c in CATEGORY_DESCRIPTIONS)
+    st.markdown(
+        f'<div class="cn-chips-plain">Classifies into 9 categories: {cats}</div>',
+        unsafe_allow_html=True,
+    )
 
 
 def render_gauge(confidence, status):
@@ -372,7 +384,7 @@ def render_evidence(explanation):
         unsafe_allow_html=True,
     )
     for word, weight in explanation:
-        color = "#5C8A6E" if weight > 0 else "#C97B2E"
+        color = "#2E7D52" if weight > 0 else "#D9650B"
         width_pct = min(abs(weight) / max_abs * 100, 100)
         bar_left = "50%" if weight >= 0 else f"{50 - width_pct/2}%"
         st.markdown(
@@ -464,6 +476,7 @@ def main():
         """,
         unsafe_allow_html=True,
     )
+
     render_category_chips()
 
     with st.sidebar:
@@ -522,6 +535,8 @@ LLM-generated realistic patient phrasing (Gemini + Groq).
         placeholder="e.g. did i get this from my mum or dad",
         label_visibility="collapsed",
     )
+
+    
 
     st.markdown(
         '<div class="cn-eyebrow" style="margin-top:0.8rem;">TRY AN EXAMPLE</div>',
